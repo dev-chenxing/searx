@@ -15,11 +15,13 @@ body {
 
 .index .title {
     background-image: url("https://code.chenxing.io/img/searxng.png") !important;
+    min-height: 8rem;
+    margin: 2rem auto;
 }
 
 .page_with_header img.logo {
     content: url(https://code.chenxing.io/img/searxng.png);
-}
+    height: 8rem;
 
 #search_header {
     background: white;
