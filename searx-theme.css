@@ -22,7 +22,8 @@ body {
 .page_with_header img.logo {
     content: url(https://code.chenxing.io/img/searxng.png);
     height: 8rem;
-
+}
+    
 #search_header {
     background: white;
 }
