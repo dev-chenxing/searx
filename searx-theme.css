@@ -3,13 +3,16 @@
     :root {
         /* PALETTE */
         --red: #96434c;
-        --red-dark: #5e292e;
+        --red-bright: #8a000f;
+        --red-darkest: #221d1d;
+        --red-darker: #7d242d;
         --red-light: #d59097;
         --color-base-background-mobile: white;
         --color-base-font: black;
         --color-btn-background: var(--red);
-        --color-result-link-font: var(--red);
-        --color-result-link-font-highlight: var(--red-dark);
+        --color-result-link-font: var(--red-bright);
+        --color-result-link-font-highlight: var(--red-darker);
+        --color-result-link-visited-font: black;
         --color-result-vim-arrow: var(--red);
         --color-search-background-hover: var(--red);
         --color-categories-item-selected-font: var(--red);
@@ -82,222 +85,52 @@
         outline: 0 !important;
     }
 
-    /* NAVIGATION BAR */
-    /* will be obsolete in upcoming searx version as navbar is replaced with
-   serax-navbar and more compact already
-  */
-    .navbar {
-        height: auto !important;
-        min-height: auto !important;
-        margin-bottom: 12px !important;
-        padding-top: 2px !important;
-        padding-bottom: 2px !important;
-        background-color: #141826 !important;
-    }
-
-    .searx-navbar {
-        background-color: #141826 !important;
-    }
-
-    .searx-navbar .pull-left a,
-    a.navbar-brand {
-        height: auto !important;
-        min-height: auto !important;
-        color: #01B2B0 !important;
-        outline: 0;
-        font-size: 13px !important;
-    }
-
-    .navbar-brand:active,
-    .navbar-brand:hover,
-    .navbar-brand:visited,
-    .searx-navbar .pull-left a:active,
-    .searx-navbar .pull-left a:hover,
-    .searx-navbar .pull-left a:visited {
-        color: #01B2B0 !important;
-        border-color: transparent !important;
-    }
-    /* MENU */
-    /* z-index too high, it's in front of modal (images) */
-    .menu {
-        z-index: 1000 !important;
-        height: auto !important;
-        min-height: auto !important;
-        padding-top: 2px !important;
-        padding-bottom: 2px !important;
-        line-height: 30px !important;
-        background-color: #141826 !important;
-    }
-
-    .menu a {
-        font-size: 13px !important;
-    }
-
-    .searx-navbar .pull-right a:active,
-    .searx-navbar .pull-right a:hover,
-    .searx-navbar .pull-right a:visited {
-        color: #84adff !important;
-        border-color: #84adff !important;
-    }
-    /* SEARCH BAR */
-    #search_form input[type="search"] {
-        -webkit-transition: all 0.1s !important;
-        transition: all 0.1s !important;
-        color: #ccc !important;
-        border-color: transparent !important;
-        background-color: #272829 !important;
-    }
-
-    #search_form input[type="search"]:focus {
-        border: 1px solid #777 !important;
-    }
-
-    #search_form .btn.btn-default[type="submit"] {
-        color: #ccc !important;
-        border-color: transparent !important;
-        background-color: #272829 !important;
-    }
-
-    #search_form .btn.btn-default[type="submit"]:active,
-    #search_form .btn.btn-default[type="submit"]:focus,
-    #search_form .btn.btn-default[type="submit"]:hover {
-        color: #333 !important;
-        background-color: #ccc !important;
-    }
-
-    #search_form .tt-dropdown-menu {
-        background-color: #272829 !important;
-    }
-
-    #search_form .tt-dropdown-menu .tt-dataset-search-results .tt-suggestions .tt-suggestion p {
-        color: #ccc !important;
-    }
-
-    #search_form .tt-dropdown-menu .tt-dataset-search-results .tt-suggestions .tt-suggestion:active,
-    #search_form .tt-dropdown-menu .tt-dataset-search-results .tt-suggestions .tt-suggestion:focus,
-    #search_form .tt-dropdown-menu .tt-dataset-search-results .tt-suggestions .tt-suggestion:hover {
-        background-color: #ccc !important;
-    }
-
-    #search_form .tt-dropdown-menu .tt-dataset-search-results .tt-suggestions .tt-suggestion:active p,
-    #search_form .tt-dropdown-menu .tt-dataset-search-results .tt-suggestions .tt-suggestion:focus p,
-    #search_form .tt-dropdown-menu .tt-dataset-search-results .tt-suggestions .tt-suggestion:hover p {
-        color: #333 !important;
-    }
     /* SEARCH RESULTS */
-    .result-content {
-        color: #ccc !important;
-    }
-    @media (max-width: 480px) {
-        .result {
-            padding-right: 0 !important;
-            padding-left: 0 !important;
-        }
-
-        .result .clearfix + .pull-right {
-            display: none !important;
-        }
-    }
-
     .external-link,
     .result .text-muted {
         overflow: hidden !important;
         text-overflow: ellipsis !important;
     }
 
-    .external-link,
-    .result .text-muted small {
-        white-space: nowrap !important;
-        color: #47c299 !important;
-    }
-
     .highlight {
-        background: none !important;
         font-weight: bold !important;
     }
 
-    h4 a {
-        font-size: 16px;
-    }
-    @media (max-width: 767px) {
-        h4 a {
-            font-size: 15px;
-        }
-    }
-
-    h4 .highlight {
-        color: #84adff !important;
-    }
-
-    .label-default {
-        color: #ba843b !important;
-        background: none !important;
-    }
-
-    .result .favicon {
-        width: 16px !important;
-        height: 16px !important;
-        margin-bottom: 0 !important;
-    }
     /* search general */
     .result-default,
     .result-default.well,
     .result.result-default {
         padding: 10px 20px !important;
     }
-    @media (max-width: 480px) {
-        .result-default {
-            padding-right: 0 !important;
-            padding-left: 5px !important;
-        }
-    }
 
-    .result-default.well {
-        margin-bottom: 0 !important;
-        margin-left: -3px !important;
-        border: none !important;
-        border-left: 3px solid #00bedb !important;
-        background-color: #0C181A !important;
-    }
-
-    .result-default .result-content {
-        overflow: hidden !important;
-        max-height: 60px !important;
-        text-overflow: ellipsis !important;
-    }
     /* search files */
     .result-torrent {
         padding: 10px 20px !important;
     }
-    @media (max-width: 480px) {
-        .result-torrent {
-            padding-right: 0 !important;
-            padding-left: 5px !important;
-        }
-    }
 
     .result-torrent:hover {
-        background-color: #111 !important;
+        background-color: white !important;
     }
 
-    .result-torrent.well {
-        margin-bottom: 0 !important;
-        margin-left: -3px !important;
-        border: none !important;
-        border-left: 3px solid #00bedb !important;
-        background-color: #172f34 !important;
+    .badge {
+        padding: .5px 3px;
     }
 
     .result-torrent .badge {
         color: #ccc !important;
-        background-color: #555 !important;
-        font-weight: 400 !important;
+        background-color: var(--red-darkest) !important;
     }
     @media (min-width: 370px) {
         .result-torrent .badge + br {
             display: none !important;
         }
     }
+
+    .result .content,
+    .result .stat {
+        margin: 10px 0;
+    }
+
     /* search images */
     .result-images a {
         background-color: transparent !important;
@@ -802,39 +635,5 @@
         border: none !important;
         box-shadow: none !important;
         font-weight: 700 !important;
-    }
-    /* UNUSED */
-    hr {
-        border-top: 1px solid #555 !important;
-    }
-    /* BUTTONS */
-    .btn-default {
-        color: #ddd !important;
-        border-color: transparent !important;
-        background-color: #555 !important;
-    }
-
-    .btn-default:hover {
-        color: #eee !important;
-        background-color: #777 !important;
-    }
-
-    .btn-primary {
-        color: black !important;
-        border-color: transparent !important;
-        background-color: #01d7d4 !important;
-    }
-
-    .btn-primary:hover {
-        color: black !important;
-        background-color: #00fffb !important;
-    }
-    /* TABLES */
-    .table > tbody > tr:first-child > th {
-        border-bottom: 1px solid #ccc !important;
-    }
-
-    .table-responsive {
-        border: none !important;
     }
 }
