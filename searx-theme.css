@@ -12,6 +12,7 @@
     --color-btn-background: var(--red);
     --color-result-link-font: var(--red-bright);
     --color-result-link-font-highlight: var(--red-darker);
+    --color-url-visited-font: var(--red-darker);
     --color-result-link-visited-font: black;
     --color-result-vim-arrow: var(--red);
     --color-search-background-hover: var(--red);
